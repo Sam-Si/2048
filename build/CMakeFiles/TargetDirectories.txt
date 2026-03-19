@@ -1,3 +1,0 @@
-/private/tmp/2048_SDL_cpp/build/CMakeFiles/2048.dir
-/private/tmp/2048_SDL_cpp/build/CMakeFiles/edit_cache.dir
-/private/tmp/2048_SDL_cpp/build/CMakeFiles/rebuild_cache.dir
