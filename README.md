@@ -1,50 +1,43 @@
-# 2048_game_cpp
+# 2048 SDL C++
 
-This is a C++ implementation of the 2048 game using SDL for graphics.
+A sleek C++ implementation of the 2048 game using SDL2 for graphics. Optimized for macOS.
 
-*This version has been updated to focus exclusively on macOS support.*
+## Prerequisites
 
-# --Dependencies--
-Requires:
-- SDL2
-- SDL2_image
-- SDL2_ttf
+Ensure you have the required dependencies installed via [Homebrew](https://brew.sh/):
 
-### For MacOS
-```sh
-brew install sdl2 sdl2_image sdl2_ttf
+```bash
+brew install sdl2 sdl2_image sdl2_ttf cmake
 ```
 
-# --Compilation on macOS--
+## Quick Start (macOS)
 
-**You should make sure all dependencies are installed before compiling.**
+Build and run the game using CMake:
 
-To build and run the game on macOS, use the following commands:
-```sh
-mkdir -p build && rm -rf build/*
+```bash
+# Configure and build
 cmake -S . -B build -DSOFTWARE_ACC=ON
 cmake --build build
+
+# Run
 ./build/2048
 ```
 
-## Alternatively, use the Makefile:
-```sh
-make clean && make release CXXFLAGS="-DSOFTWARE_ACC"
-./2048
+## Usage
+
+You can customize the board size and window dimensions:
+
+```bash
+./build/2048 --size 4 --window 600
 ```
 
-# --Directions--
-Usage: `./2048 <-s/--size> <-w/--window>`
-- `-s/--size` specifies number of tiles in each row (default is 4)
-- `-w/--window` specifies initial size of window (default is 600)
+- `-s, --size`: Number of tiles per row/column (default: 4)
+- `-w, --window`: Initial window size in pixels (default: 600)
 
-**Example:**
-```sh
-./2048 -s 4 -w 600
-```
-Would start game with a 4x4 board on a 600x600 pixel window.
+## Controls
 
-# --License and Credits--
-Original code by Nicholas Metcalf. Updates for macOS and CMake support added.
+- **Arrow Keys**: Move tiles
+- **Q / ESC**: Quit game
 
-# Enjoy!
+---
+*Original code by Nicholas Metcalf. Updated for modern macOS support.*
