@@ -41,8 +41,10 @@ Board_test_1
 
 # Build directories
 build/
-cmake-build-debug/
-cmake-build-release/
+bin/
+obj/
+cmake-build-*/
+out/
 
 # CMake generated files (if not in build/)
 CMakeCache.txt
@@ -52,6 +54,7 @@ cmake_install.cmake
 install_manifest.txt
 compile_commands.json
 CTestTestfile.cmake
+_deps/
 
 # OS generated files
 .DS_Store
